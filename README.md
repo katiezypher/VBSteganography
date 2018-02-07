@@ -2,6 +2,12 @@
 
 Written in VB6.0 in 2002
 
+It may require the following files to run:
+COMDLG32.OCX
+MSCOMCTL.OCX
+RICHTX32.OCX
+MSVBVM60.DLL
+
 This program allows you to:
 
 1) Encrypt text and save it to a text file.
