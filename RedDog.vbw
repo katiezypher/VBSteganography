@@ -1,0 +1,6 @@
+AppMainForm = 154, 154, 1012, 877, , 66, 66, 924, 789, C
+Encryption = 154, 0, 1056, 1084, 
+FileManipulation = 0, 0, 0, 0, C
+AboutFrm = 0, 0, 0, 0, C, 110, 110, 968, 833, C
+HelpFrm = 0, 0, 0, 0, C, 132, 132, 990, 855, C
+PreLoadForm = 0, 0, 1255, 815, , 66, 66, 924, 789, C
