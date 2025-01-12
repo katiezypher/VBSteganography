@@ -2,6 +2,8 @@
 
 Written in VB6.0
 
+This is just a facelift of 4ndronicus' repo, the main purpose of this fork is to now be viewable on smaller screens
+
 It may require the following files to run:
 COMDLG32.OCX
 MSCOMCTL.OCX
@@ -34,12 +36,3 @@ later versions, but for this one, it didn't.
 
 Test it out and let me know if anything happens that
 you think shouldn't happen or doesn't that should.
-
-Updates:
-1.1 - Fixed bug in encryption algorithms.
-    - Added ability to do 'Xor' operations using key.
-    - Added menuing system.
-    - Added 'Help' and 'About' screens.
-    - Loads characters with the ascii value of 8 
-      properly (as this is a backspace, it was
-      actually deleting characters when it shouldn't)
