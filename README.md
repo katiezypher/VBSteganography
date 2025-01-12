@@ -1,6 +1,6 @@
 # Description #
 
-Written in VB6.0 in 2002
+Written in VB6.0
 
 It may require the following files to run:
 COMDLG32.OCX
@@ -15,10 +15,6 @@ This program allows you to:
    text embedded) out to a file.
 3) Encrypt text and embed it into an image file and
    save the image (with text embedded) out to a file.
-
-The buttons across the top of the interface are for
-the text boxes.  The buttons across the middle are
-for the image.
 
 If you can't figure it out, I think an excellent 
 career oportunity awaits you in the "Worm Farming"
