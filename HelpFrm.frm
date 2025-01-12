@@ -1,25 +1,25 @@
 VERSION 5.00
 Begin VB.Form HelpFrm 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "Red Dog Help"
-   ClientHeight    =   11115
+   Caption         =   "VBSteganography Help"
+   ClientHeight    =   6855
    ClientLeft      =   45
    ClientTop       =   330
-   ClientWidth     =   6615
+   ClientWidth     =   8145
    LinkTopic       =   "Form2"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   11115
-   ScaleWidth      =   6615
+   ScaleHeight     =   6855
+   ScaleWidth      =   8145
    ShowInTaskbar   =   0   'False
    StartUpPosition =   2  'CenterScreen
    Visible         =   0   'False
    Begin VB.CommandButton OKBttn 
       Caption         =   "&OK"
       Height          =   495
-      Left            =   2640
+      Left            =   3480
       TabIndex        =   1
-      Top             =   10440
+      Top             =   6240
       Width           =   1215
    End
    Begin VB.TextBox Text1 
@@ -32,15 +32,16 @@ Begin VB.Form HelpFrm
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   10215
+      Height          =   6015
       Left            =   0
       MousePointer    =   1  'Arrow
       MultiLine       =   -1  'True
+      ScrollBars      =   2  'Vertical
       TabIndex        =   0
       TabStop         =   0   'False
       Text            =   "HelpFrm.frx":0000
       Top             =   0
-      Width           =   6615
+      Width           =   8175
    End
 End
 Attribute VB_Name = "HelpFrm"

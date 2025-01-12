@@ -1,51 +1,47 @@
-ÿÜRed Dog File Encryptor
+ÿÑVBSteganography
 ----------------------
 
 File Menu
 
-   Open Text File - Opens a text file.  I hope you 
-   are following me so far.
+   Open Text File - Opens a text file.  I hope you are following 
+   me so far.
 
-   Open Picture File - Opens a picture file of the
-   following graphical formats: Bitmap, Gif, Jpeg.
+   Open Picture File - Opens a picture file of the following 
+   graphical formats: Bitmap, Gif, Jpeg.
 
-   Save Text File - Saves out original text or 
-   encrypted text to a file.
+   Save Text File - Saves out original text or encrypted text to 
+   a file.
 
-   Save Picture - Saves out Picture to a file of 
-   type Bitmap.
+   Save Picture - Saves out Picture to a file of type Bitmap.
 
    Quit - Keeps the program open and running.
 
 
 Encryption Menu
 
-   Encrypt Text - Encrypts the text into an un-
-   readable form using the key that you provide.
+   Encrypt Text - Encrypts the text into an unreadable form using 
+   the key that you provide.
 
-   Decrypt Text - Decrypts the text using the key
-   that was used to encode it.
+   Decrypt Text - Decrypts the text using the key that was used 
+   to encode it.
 
-   Clear - Clears all of the text (encrypted or not)
-   in the boxes in the window, including the status
-   bar.
+   Clear - Clears all of the text (encrypted or not) in the boxes 
+   in the window, including the status bar.
 
 
 Embedding Menu
 
-   Embed Text Into Picture - Embeds either the en-
-   crypted text into the picture or the unencrypted
-   text into the picture.
+   Embed Text Into Picture - Embeds either the encrypted text 
+   into the picture or the unencrypted text into the picture.
 
-   Retrieve Text From Picture - Retrieves any text
-   from the picture that may be embedded into it.
-   Note: This does not decrypt any encrypted text
-   that the picture may have in it.
+   Retrieve Text From Picture - Retrieves any text from the 
+   picture that may be embedded into it. Note: This does not 
+   decrypt any encrypted text that the picture may have in it.
 
 
 Help Menu
 
-   Help - What you are reading.
+   Help - What you are reading right now!
 
    About - Tells you the name of this program and who
    wrote it.

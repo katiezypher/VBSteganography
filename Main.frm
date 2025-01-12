@@ -1,41 +1,43 @@
 VERSION 5.00
 Object = "{3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0"; "RICHTX32.OCX"
-Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "comdlg32.ocx"
-Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MsComCtl.ocx"
+Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
+Object = "{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0"; "MSCOMCTL.OCX"
 Begin VB.Form AppMainForm 
    BorderStyle     =   1  'Fixed Single
-   Caption         =   "Red Dog 1.1"
-   ClientHeight    =   10995
+   Caption         =   "Katezie's VBSteganography"
+   ClientHeight    =   5610
    ClientLeft      =   45
    ClientTop       =   615
-   ClientWidth     =   7980
+   ClientWidth     =   8295
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
-   ScaleHeight     =   10995
-   ScaleWidth      =   7980
+   ScaleHeight     =   5610
+   ScaleWidth      =   8295
    StartUpPosition =   2  'CenterScreen
    Begin RichTextLib.RichTextBox TempBox 
       Height          =   735
       Left            =   9480
-      TabIndex        =   21
+      TabIndex        =   16
       TabStop         =   0   'False
       Top             =   600
       Width           =   1455
       _ExtentX        =   2566
       _ExtentY        =   1296
       _Version        =   393217
+      Enabled         =   -1  'True
       ScrollBars      =   2
       TextRTF         =   $"Main.frx":0000
    End
    Begin RichTextLib.RichTextBox EncryptedBox 
-      Height          =   1815
-      Left            =   0
-      TabIndex        =   20
-      Top             =   5520
-      Width           =   7935
-      _ExtentX        =   13996
-      _ExtentY        =   3201
+      Height          =   1335
+      Left            =   4560
+      TabIndex        =   15
+      Top             =   600
+      Width           =   3375
+      _ExtentX        =   5953
+      _ExtentY        =   2355
       _Version        =   393217
+      Enabled         =   -1  'True
       ScrollBars      =   2
       TextRTF         =   $"Main.frx":0082
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -50,117 +52,101 @@ Begin VB.Form AppMainForm
    End
    Begin VB.TextBox KeyBox 
       Height          =   285
-      Left            =   2760
-      TabIndex        =   19
-      Top             =   465
-      Width           =   5175
+      Left            =   1440
+      TabIndex        =   14
+      Top             =   2160
+      Width           =   3735
    End
    Begin VB.CommandButton OpenBttn 
-      Caption         =   "&Open Text File"
-      Height          =   375
-      Left            =   0
+      Caption         =   "&Open .txt"
+      Height          =   255
+      Left            =   5280
       TabIndex        =   1
       ToolTipText     =   "Open a text file for encryption."
-      Top             =   0
-      Width           =   1335
+      Top             =   2160
+      Width           =   855
    End
    Begin VB.CommandButton EncryptBttn 
-      Caption         =   "E&ncrypt"
-      Height          =   375
-      Left            =   1320
+      Caption         =   ">>"
+      Height          =   255
+      Left            =   3960
       TabIndex        =   2
       ToolTipText     =   "Encrypt the text file."
-      Top             =   0
-      Width           =   1335
+      Top             =   840
+      Width           =   375
    End
    Begin VB.CommandButton DecryptBttn 
-      Caption         =   "&Decrypt"
-      Height          =   375
-      Left            =   2640
+      Caption         =   "<<"
+      Height          =   255
+      Left            =   3960
       TabIndex        =   3
       ToolTipText     =   "Decrypt the text file."
-      Top             =   0
-      Width           =   1335
+      Top             =   1320
+      Width           =   375
    End
    Begin VB.CommandButton SaveBttn 
-      Caption         =   "&Save Text"
-      Height          =   375
-      Left            =   3960
+      Caption         =   "&Save .txt"
+      Height          =   255
+      Left            =   6240
       TabIndex        =   4
       ToolTipText     =   "Save the encrypted text file."
-      Top             =   0
-      Width           =   1335
+      Top             =   2160
+      Width           =   855
    End
    Begin VB.CommandButton ClearBttn 
       Caption         =   "&Clear"
-      Height          =   375
-      Left            =   5280
+      Height          =   255
+      Left            =   7200
       TabIndex        =   5
       ToolTipText     =   "Clear all textual contents."
-      Top             =   0
-      Width           =   1335
-   End
-   Begin VB.CommandButton Command1 
-      Caption         =   "&Quit"
-      Height          =   375
-      Left            =   6600
-      TabIndex        =   6
-      ToolTipText     =   "Exit the program."
-      Top             =   0
-      Width           =   1335
+      Top             =   2160
+      Width           =   855
    End
    Begin VB.CommandButton OpenPictureBttn 
       Caption         =   "O&pen Picture"
       Height          =   375
-      Left            =   0
-      TabIndex        =   7
+      Left            =   6720
+      TabIndex        =   6
       ToolTipText     =   "Open a graphic file to embed message into."
-      Top             =   7440
+      Top             =   3120
       Width           =   1335
    End
    Begin VB.CommandButton EmbedBttn 
-      Caption         =   "Em&bed"
+      Caption         =   "Em&bed Text"
       Height          =   375
-      Left            =   1320
-      TabIndex        =   8
+      Left            =   6720
+      TabIndex        =   7
       ToolTipText     =   "Embed the encrypted text into the graphic."
-      Top             =   7440
+      Top             =   4080
       Width           =   1335
    End
    Begin VB.CommandButton RetrieveBttn 
-      Caption         =   "&Retrieve"
+      Caption         =   "&Retrieve Text"
       Height          =   375
-      Left            =   2640
-      TabIndex        =   9
+      Left            =   6720
+      TabIndex        =   8
       ToolTipText     =   "Retrieve embedded message from the graphic."
-      Top             =   7440
+      Top             =   4560
       Width           =   1335
    End
    Begin VB.CommandButton SavePicBttn 
       Caption         =   "S&ave Picture"
       Height          =   375
-      Left            =   3960
-      TabIndex        =   10
+      Left            =   6720
+      TabIndex        =   9
       ToolTipText     =   "Save the graphic out to a file."
-      Top             =   7440
+      Top             =   3600
       Width           =   1335
    End
-   Begin MSComDlg.CommonDialog CommonDialog2 
-      Left            =   1440
-      Top             =   7680
-      _ExtentX        =   847
-      _ExtentY        =   847
-      _Version        =   393216
-   End
    Begin VB.PictureBox Picture1 
-      Height          =   2415
-      Left            =   0
-      ScaleHeight     =   2355
-      ScaleWidth      =   7875
-      TabIndex        =   13
+      Height          =   1455
+      Left            =   360
+      ScaleHeight     =   1395
+      ScaleWidth      =   6075
+      TabIndex        =   12
       TabStop         =   0   'False
-      Top             =   8160
-      Width           =   7935
+      Top             =   3360
+      Width           =   6135
       Begin VB.PictureBox Picture2 
          Appearance      =   0  'Flat
          AutoRedraw      =   -1  'True
@@ -168,38 +154,37 @@ Begin VB.Form AppMainForm
          BackColor       =   &H00FFFFFF&
          BorderStyle     =   0  'None
          ForeColor       =   &H80000008&
-         Height          =   2295
+         Height          =   1455
          Left            =   0
          MousePointer    =   1  'Arrow
-         ScaleHeight     =   153
+         ScaleHeight     =   97
          ScaleMode       =   3  'Pixel
-         ScaleWidth      =   529
-         TabIndex        =   14
+         ScaleWidth      =   409
+         TabIndex        =   13
          TabStop         =   0   'False
          Top             =   0
-         Width           =   7935
+         Width           =   6135
       End
    End
    Begin VB.CommandButton Dummy 
       Caption         =   "Command5"
       Height          =   495
       Left            =   0
-      TabIndex        =   12
+      TabIndex        =   11
       TabStop         =   0   'False
       Top             =   14880
       Width           =   1215
    End
    Begin RichTextLib.RichTextBox DecryptedBox 
-      Height          =   4335
-      Left            =   0
+      Height          =   1335
+      Left            =   360
       TabIndex        =   0
       TabStop         =   0   'False
-      Top             =   840
-      Width           =   7935
-      _ExtentX        =   13996
-      _ExtentY        =   7646
+      Top             =   600
+      Width           =   3375
+      _ExtentX        =   5953
+      _ExtentY        =   2355
       _Version        =   393217
-      Enabled         =   -1  'True
       ScrollBars      =   2
       TextRTF         =   $"Main.frx":00FE
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
@@ -216,10 +201,10 @@ Begin VB.Form AppMainForm
       Align           =   2  'Align Bottom
       Height          =   375
       Left            =   0
-      TabIndex        =   11
-      Top             =   10620
-      Width           =   7980
-      _ExtentX        =   14076
+      TabIndex        =   10
+      Top             =   5235
+      Width           =   8295
+      _ExtentX        =   14631
       _ExtentY        =   661
       _Version        =   393216
       BeginProperty Panels {8E3867A5-8586-11D1-B16A-00C0F0283628} 
@@ -230,44 +215,67 @@ Begin VB.Form AppMainForm
          EndProperty
       EndProperty
    End
-   Begin MSComDlg.CommonDialog CommonDialog1 
-      Left            =   7440
+   Begin VB.Frame Label2 
+      Caption         =   "Encrypted Text"
+      Height          =   1695
+      Left            =   4440
+      TabIndex        =   17
+      Top             =   360
+      Width           =   3615
+   End
+   Begin VB.Frame Label1 
+      Caption         =   "Plain Text"
+      Height          =   1695
+      Left            =   240
+      TabIndex        =   18
+      Top             =   360
+      Width           =   3615
+   End
+   Begin VB.Frame Frame1 
+      Caption         =   "Text Encryption"
+      Height          =   2535
+      Left            =   120
+      TabIndex        =   19
       Top             =   120
+      Width           =   8055
+      Begin VB.Label Label4 
+         Caption         =   "Encryption Key:"
+         Height          =   255
+         Left            =   120
+         TabIndex        =   20
+         Top             =   2040
+         Width           =   1575
+      End
+   End
+   Begin VB.Frame Frame2 
+      Caption         =   "Steganography"
+      Height          =   2175
+      Left            =   120
+      TabIndex        =   21
+      Top             =   2880
+      Width           =   8055
+      Begin VB.Frame Frame3 
+         Caption         =   "Picture"
+         Height          =   1815
+         Left            =   120
+         TabIndex        =   22
+         Top             =   240
+         Width           =   6375
+      End
+   End
+   Begin MSComDlg.CommonDialog CommonDialog1 
+      Left            =   5520
+      Top             =   2160
       _ExtentX        =   847
       _ExtentY        =   847
       _Version        =   393216
    End
-   Begin VB.Label Label4 
-      Caption         =   "Encryption Key:"
-      Height          =   255
-      Left            =   1560
-      TabIndex        =   18
-      Top             =   480
-      Width           =   1335
-   End
-   Begin VB.Label Label3 
-      Caption         =   "Picture:"
-      Height          =   255
-      Left            =   120
-      TabIndex        =   17
-      Top             =   7920
-      Width           =   1215
-   End
-   Begin VB.Label Label2 
-      Caption         =   "Encrypted Text"
-      Height          =   255
-      Left            =   120
-      TabIndex        =   16
-      Top             =   5280
-      Width           =   1335
-   End
-   Begin VB.Label Label1 
-      Caption         =   "Unencrypted Text"
-      Height          =   255
-      Left            =   0
-      TabIndex        =   15
-      Top             =   600
-      Width           =   1575
+   Begin MSComDlg.CommonDialog CommonDialog2 
+      Left            =   7560
+      Top             =   2880
+      _ExtentX        =   847
+      _ExtentY        =   847
+      _Version        =   393216
    End
    Begin VB.Menu FileMnu 
       Caption         =   "&File"
@@ -323,6 +331,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
 Private Sub About_HelpMnu_Click()
     AboutFrm.Visible = True
 End Sub
@@ -421,6 +430,10 @@ End Sub
 
 Private Sub Help_HelpMnu_Click()
     HelpFrm.Visible = True
+End Sub
+
+Private Sub Label3_Click()
+
 End Sub
 
 Private Sub OpenBttn_Click()
@@ -545,3 +558,4 @@ End Sub
 Private Sub SaveText_FileMnu_Click()
     Call SaveBttn_Click
 End Sub
+
